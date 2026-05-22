@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40">
+  <!-- NP Mark -->
+  <g transform="translate(0,0)">
+    <!-- Navy background block -->
+    <rect x="0" y="2" width="30" height="36" rx="3" fill="#163773"/>
+    <!-- Orange diagonal slash -->
+    <polygon points="18,2 30,2 30,20 18,2" fill="#F05028"/>
+    <!-- White NP letters -->
+    <text x="4" y="27" font-family="Arial,sans-serif" font-size="15" font-weight="900" fill="#ffffff" letter-spacing="-0.5">NP</text>
+  </g>
+  <!-- NECTARDIGIT text -->
+  <text x="36" y="26" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#163773" letter-spacing="1.2">NECTARDIGIT</text>
+</svg>

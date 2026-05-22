@@ -1,8 +1,8 @@
-site_name: NectarPress Documentation
+﻿site_name: NectarPress Documentation
 site_url: https://nectardigitprod.github.io/nectarpress-docs/
 site_description: Official documentation for the NectarPress WordPress news-portal theme
 site_author: Nectar Digit Pvt. Ltd.
-copyright: "© 2024–2026 Nectar Digit Pvt. Ltd. | <a href='https://nectardigit.com/legal/privacy'>Privacy Policy</a>"
+copyright: "Â© 2024â€“2026 Nectar Digit Pvt. Ltd. | <a href='https://nectardigit.com/legal/privacy'>Privacy Policy</a>"
 
 repo_name: nectardigitprod/nectarpress-docs
 repo_url: https://github.com/nectardigitprod/nectarpress-docs
@@ -13,8 +13,8 @@ site_dir: site
 
 theme:
   name: material
-  language: en
   custom_dir: docs/overrides
+  language: en
   palette:
     - scheme: default
       primary: indigo
@@ -31,8 +31,8 @@ theme:
   font:
     text: Inter
     code: JetBrains Mono
-  logo: assets/logo.png
-  favicon: assets/favicon.png
+  logo: https://nectardigit.com/storage/photos/1/site_logo_nd.png
+  favicon: https://nectardigit.com/storage/photos/1/site_logo_nd.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -121,3 +121,4 @@ nav:
       - Architecture: architecture.md
       - WP-CLI Reference: cli-reference.md
       - Contributing: contributing.md
+
