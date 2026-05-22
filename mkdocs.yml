@@ -1,0 +1,123 @@
+site_name: NectarPress Documentation
+site_url: https://nectardigitprod.github.io/nectarpress-docs/
+site_description: Official documentation for the NectarPress WordPress news-portal theme
+site_author: Nectar Digit Pvt. Ltd.
+copyright: "© 2024–2026 Nectar Digit Pvt. Ltd. | <a href='https://nectardigit.com/legal/privacy'>Privacy Policy</a>"
+
+repo_name: nectardigitprod/nectarpress-docs
+repo_url: https://github.com/nectardigitprod/nectarpress-docs
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  custom_dir: docs/overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - announce.dismiss
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nectardigit/nectar-press
+      name: NectarPress on GitHub
+    - icon: fontawesome/solid/globe
+      link: https://nectardigit.com
+      name: Nectar Digit website
+  version:
+    provider: mike
+    default: stable
+  generator: false
+
+plugins:
+  - search:
+      lang:
+        - en
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Onboarding Guide: onboarding.md
+      - Migration: migration.md
+  - Configuration:
+      - Customization: customization.md
+      - Integrations: integrations.md
+      - SEO: seo.md
+  - Operations:
+      - Performance: performance.md
+      - Security: security.md
+      - Server Configuration: server-config.md
+      - Troubleshooting: troubleshooting.md
+  - Developer Reference:
+      - Hooks Reference: hooks-reference.md
+      - Architecture: architecture.md
+      - WP-CLI Reference: cli-reference.md
+      - Contributing: contributing.md

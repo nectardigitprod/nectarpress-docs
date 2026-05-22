@@ -1,0 +1,79 @@
+/* NectarPress Docs — Brand color overrides for MkDocs Material */
+
+:root {
+  --md-primary-fg-color:        #163773;
+  --md-primary-fg-color--light: #0284C7;
+  --md-primary-fg-color--dark:  #0f2850;
+  --md-accent-fg-color:         #0284C7;
+  --md-accent-fg-color--transparent: rgba(2,132,199,.1);
+}
+
+/* Primary nav & header */
+.md-header,
+.md-tabs {
+  background-color: #163773;
+}
+
+/* Active nav tab */
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+/* Sidebar active item */
+.md-nav__link--active {
+  color: #0284C7 !important;
+  font-weight: 600;
+}
+
+/* Links */
+.md-content a {
+  color: #0284C7;
+}
+
+.md-content a:hover {
+  color: #0a6dd4;
+}
+
+/* Code blocks — slightly warmer */
+.highlight pre,
+.md-typeset pre code {
+  background: #0f172a !important;
+}
+
+/* Admonition colors */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: #0284C7;
+}
+
+.md-typeset .admonition.tip > .admonition-title,
+.md-typeset details.tip > summary {
+  background-color: rgba(2,132,199,.1);
+}
+
+/* Announcement bar */
+.md-banner {
+  background-color: #163773;
+  color: #fff;
+}
+
+/* Hero section on home page */
+.md-typeset h1 {
+  font-weight: 800;
+  color: #163773;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #0284C7;
+  --md-accent-fg-color:         #38bdf8;
+  --md-default-bg-color:        #0f172a;
+  --md-default-fg-color:        #e2e8f0;
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #0f2850;
+}
